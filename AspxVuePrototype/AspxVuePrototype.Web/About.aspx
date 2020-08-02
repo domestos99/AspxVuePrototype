@@ -4,4 +4,13 @@
     <h2><%: Title %>.</h2>
     <h3>Your application description page.</h3>
     <p>Use this area to provide additional information.</p>
+    
+    
+    <div id="app">
+    </div>
+    
+    <script src="Scripts/vue/dist/js/main.js"></script>
+    <script src="Scripts/vue/dist/js/chunk-vendors.js"></script>
+    
+
 </asp:Content>
