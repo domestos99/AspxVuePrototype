@@ -131,7 +131,6 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Scripts\vue\gulpfile.js" />
     <Content Include="Scripts\vue\package.json" />
     <Content Include="Scripts\vue\src\assets\logo.png" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -249,6 +248,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Scripts\vue\src\model\person.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -18,6 +18,7 @@
 
 import RefreshButton from "../components/refresh-button/RefreshButton";
 import FullNameEditor from "../components/FullNameEditor";
+import Person from '../model/person';
 
 export default {
   name: 'DefaultPage',

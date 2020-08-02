@@ -1,19 +1,26 @@
+
+
 <template>
-  <button class="btn btn-primary">My Button</button>
+    <a class="btn btn-primary" v-on:click="btnClicked" >Refresh Button</a>
 </template>
 
 <script>
-export default {
-  name: 'RefreshButton',
-  data() {
-    return {
+    export default {
+        name: 'RefreshButton',
+        data() {
+            return {
+
+            }
+        },
+        methods: {
+            btnClicked: function (event) {               
+                console.log(event);
+                return false;
+            }
+        }
 
     }
-  },
-
-}
 </script>
 
 <style scoped>
-
 </style>
