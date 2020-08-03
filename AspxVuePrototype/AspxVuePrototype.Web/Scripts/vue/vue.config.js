@@ -1,5 +1,5 @@
 ﻿module.exports = {
-    
+    filenameHashing: false,
     pages:
     {
         main: {

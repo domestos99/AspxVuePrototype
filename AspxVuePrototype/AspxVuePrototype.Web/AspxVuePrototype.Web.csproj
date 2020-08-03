@@ -131,6 +131,9 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Scripts\vue\dist\js\chunk-vendors.js" />
+    <Content Include="Scripts\vue\dist\js\default.js" />
+    <Content Include="Scripts\vue\dist\js\main.js" />
     <Content Include="Scripts\vue\package.json" />
     <Content Include="Scripts\vue\src\assets\logo.png" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -223,7 +226,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="aspx_vue_prototype\" />
-    <Folder Include="Scripts\vue\dist\js\" />
     <Folder Include="ts\" />
   </ItemGroup>
   <ItemGroup>
@@ -236,6 +238,9 @@
     <Content Include="Scripts\vue\src\components\FullNameEditor.vue" />
     <Content Include="Scripts\vue\src\pages\DefaultPage.vue" />
     <Content Include="Scripts\vue\src\components\refresh-button\RefreshButton.vue" />
+    <Content Include="Scripts\vue\dist\js\chunk-vendors.js.map" />
+    <Content Include="Scripts\vue\dist\js\default.js.map" />
+    <Content Include="Scripts\vue\dist\js\main.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
