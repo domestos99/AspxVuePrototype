@@ -174,6 +174,7 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\Processors\TestProcessor.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -201,6 +202,10 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="services\HandlerModelFactory.cs" />
+    <Compile Include="services\JsonResponse.cs" />
+    <Compile Include="services\NameValueCollectionExtensions.cs" />
+    <Compile Include="services\TestModel.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -241,6 +246,8 @@
     <Content Include="Scripts\vue\dist\js\chunk-vendors.js.map" />
     <Content Include="Scripts\vue\dist\js\default.js.map" />
     <Content Include="Scripts\vue\dist\js\main.js.map" />
+    <Content Include="services\TestHandler.ashx" />
+    <Compile Include="services\GenericHandler.cs" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
