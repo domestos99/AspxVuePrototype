@@ -6,8 +6,8 @@
     <div id="DefaultPage">
     </div>
     
-    <script src="Scripts/vue/dist/js/default.js"></script>
-    <script src="Scripts/vue/dist/js/chunk-vendors.js"></script>
+    <script src="vue/dist/js/default.js"></script>
+    <script src="vue/dist/js/chunk-vendors.js"></script>
 
 
 </asp:Content>

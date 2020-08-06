@@ -9,8 +9,8 @@
     <div id="app">
     </div>
     
-    <script src="Scripts/vue/dist/js/main.js"></script>
-    <script src="Scripts/vue/dist/js/chunk-vendors.js"></script>
+    <script src="vue/dist/js/main.js"></script>
+    <script src="vue/dist/js/chunk-vendors.js"></script>
     
 
 </asp:Content>

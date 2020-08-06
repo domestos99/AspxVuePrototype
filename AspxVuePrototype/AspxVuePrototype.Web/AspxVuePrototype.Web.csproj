@@ -112,30 +112,113 @@
   <ItemGroup>
     <Content Include=".gitignore" />
     <Content Include="About.aspx" />
-    <Content Include="Scripts\vue\babel.config.js" />
-    <Content Include="Contact.aspx" />
+    <Content Include="admin_lte\css\adminlte.css" />
+    <Content Include="admin_lte\css\adminlte.min.css" />
+    <Content Include="admin_lte\css\alt\adminlte.components.css" />
+    <Content Include="admin_lte\css\alt\adminlte.components.min.css" />
+    <Content Include="admin_lte\css\alt\adminlte.core.css" />
+    <Content Include="admin_lte\css\alt\adminlte.core.min.css" />
+    <Content Include="admin_lte\css\alt\adminlte.extra-components.css" />
+    <Content Include="admin_lte\css\alt\adminlte.extra-components.min.css" />
+    <Content Include="admin_lte\css\alt\adminlte.pages.css" />
+    <Content Include="admin_lte\css\alt\adminlte.pages.min.css" />
+    <Content Include="admin_lte\css\alt\adminlte.plugins.css" />
+    <Content Include="admin_lte\css\alt\adminlte.plugins.min.css" />
+    <Content Include="admin_lte\img\AdminLTELogo.png" />
+    <Content Include="admin_lte\img\avatar.png" />
+    <Content Include="admin_lte\img\avatar04.png" />
+    <Content Include="admin_lte\img\avatar2.png" />
+    <Content Include="admin_lte\img\avatar3.png" />
+    <Content Include="admin_lte\img\avatar5.png" />
+    <Content Include="admin_lte\img\boxed-bg.jpg" />
+    <Content Include="admin_lte\img\boxed-bg.png" />
+    <Content Include="admin_lte\img\credit\american-express.png" />
+    <Content Include="admin_lte\img\credit\cirrus.png" />
+    <Content Include="admin_lte\img\credit\mastercard.png" />
+    <Content Include="admin_lte\img\credit\mestro.png" />
+    <Content Include="admin_lte\img\credit\paypal.png" />
+    <Content Include="admin_lte\img\credit\paypal2.png" />
+    <Content Include="admin_lte\img\credit\visa.png" />
+    <Content Include="admin_lte\img\default-150x150.png" />
+    <Content Include="admin_lte\img\icons.png" />
+    <Content Include="admin_lte\img\photo1.png" />
+    <Content Include="admin_lte\img\photo2.png" />
+    <Content Include="admin_lte\img\photo3.jpg" />
+    <Content Include="admin_lte\img\photo4.jpg" />
+    <Content Include="admin_lte\img\prod-1.jpg" />
+    <Content Include="admin_lte\img\prod-2.jpg" />
+    <Content Include="admin_lte\img\prod-3.jpg" />
+    <Content Include="admin_lte\img\prod-4.jpg" />
+    <Content Include="admin_lte\img\prod-5.jpg" />
+    <Content Include="admin_lte\img\user1-128x128.jpg" />
+    <Content Include="admin_lte\img\user2-160x160.jpg" />
+    <Content Include="admin_lte\img\user3-128x128.jpg" />
+    <Content Include="admin_lte\img\user4-128x128.jpg" />
+    <Content Include="admin_lte\img\user5-128x128.jpg" />
+    <Content Include="admin_lte\img\user6-128x128.jpg" />
+    <Content Include="admin_lte\img\user7-128x128.jpg" />
+    <Content Include="admin_lte\img\user8-128x128.jpg" />
+    <Content Include="admin_lte\js\adminlte.js" />
+    <Content Include="admin_lte\js\adminlte.min.js" />
+    <Content Include="admin_lte\js\demo.js" />
+    <Content Include="admin_lte\js\pages\dashboard.js" />
+    <Content Include="admin_lte\js\pages\dashboard2.js" />
+    <Content Include="admin_lte\js\pages\dashboard3.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\fontawesome-free\css\all.css" />
+    <Content Include="Content\fontawesome-free\css\all.min.css" />
+    <Content Include="Content\fontawesome-free\css\brands.css" />
+    <Content Include="Content\fontawesome-free\css\brands.min.css" />
+    <Content Include="Content\fontawesome-free\css\fontawesome.css" />
+    <Content Include="Content\fontawesome-free\css\fontawesome.min.css" />
+    <Content Include="Content\fontawesome-free\css\regular.css" />
+    <Content Include="Content\fontawesome-free\css\regular.min.css" />
+    <Content Include="Content\fontawesome-free\css\solid.css" />
+    <Content Include="Content\fontawesome-free\css\solid.min.css" />
+    <Content Include="Content\fontawesome-free\css\svg-with-js.css" />
+    <Content Include="Content\fontawesome-free\css\svg-with-js.min.css" />
+    <Content Include="Content\fontawesome-free\css\v4-shims.css" />
+    <Content Include="Content\fontawesome-free\css\v4-shims.min.css" />
+    <Content Include="Content\fontawesome-free\webfonts\fa-brands-400.svg" />
+    <Content Include="Content\fontawesome-free\webfonts\fa-regular-400.svg" />
+    <Content Include="Content\fontawesome-free\webfonts\fa-solid-900.svg" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
-    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap.min.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Scripts\vue\dist\js\chunk-vendors.js" />
-    <Content Include="Scripts\vue\dist\js\default.js" />
-    <Content Include="Scripts\vue\dist\js\main.js" />
-    <Content Include="Scripts\vue\package.json" />
-    <Content Include="Scripts\vue\src\assets\logo.png" />
+    <Content Include="admin_lte\css\adminlte.css.map" />
+    <Content Include="admin_lte\css\adminlte.min.css.map" />
+    <Content Include="admin_lte\css\alt\adminlte.components.css.map" />
+    <Content Include="admin_lte\css\alt\adminlte.components.min.css.map" />
+    <Content Include="admin_lte\css\alt\adminlte.core.css.map" />
+    <Content Include="admin_lte\css\alt\adminlte.core.min.css.map" />
+    <Content Include="admin_lte\css\alt\adminlte.extra-components.css.map" />
+    <Content Include="admin_lte\css\alt\adminlte.extra-components.min.css.map" />
+    <Content Include="admin_lte\css\alt\adminlte.pages.css.map" />
+    <Content Include="admin_lte\css\alt\adminlte.pages.min.css.map" />
+    <Content Include="admin_lte\css\alt\adminlte.plugins.css.map" />
+    <Content Include="admin_lte\css\alt\adminlte.plugins.min.css.map" />
+    <Content Include="admin_lte\js\adminlte.js.map" />
+    <Content Include="admin_lte\js\adminlte.min.js.map" />
+    <Content Include="Content\fontawesome-free\webfonts\fa-brands-400.eot" />
+    <Content Include="Content\fontawesome-free\webfonts\fa-brands-400.ttf" />
+    <Content Include="Content\fontawesome-free\webfonts\fa-brands-400.woff" />
+    <Content Include="Content\fontawesome-free\webfonts\fa-brands-400.woff2" />
+    <Content Include="Content\fontawesome-free\webfonts\fa-regular-400.eot" />
+    <Content Include="Content\fontawesome-free\webfonts\fa-regular-400.ttf" />
+    <Content Include="Content\fontawesome-free\webfonts\fa-regular-400.woff" />
+    <Content Include="Content\fontawesome-free\webfonts\fa-regular-400.woff2" />
+    <Content Include="Content\fontawesome-free\webfonts\fa-solid-900.eot" />
+    <Content Include="Content\fontawesome-free\webfonts\fa-solid-900.ttf" />
+    <Content Include="Content\fontawesome-free\webfonts\fa-solid-900.woff" />
+    <Content Include="Content\fontawesome-free\webfonts\fa-solid-900.woff2" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -144,8 +227,6 @@
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Scripts\vue\src\pages\DefaultPageMain.js" />
-    <Content Include="Scripts\vue\vue.config.js" />
     <Content Include="Scripts\WebForms\DetailsView.js" />
     <Content Include="Scripts\WebForms\Focus.js" />
     <Content Include="Scripts\WebForms\GridView.js" />
@@ -168,10 +249,13 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
-    <Content Include="ViewSwitcher.ascx" />
+    <Content Include="vue\babel.config.js" />
+    <Content Include="vue\src\assets\logo.png" />
+    <Content Include="vue\src\main.js" />
+    <Content Include="vue\src\pages\DefaultPageMain.js" />
+    <Content Include="vue\vue.config.js" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
-    <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Code\Processors\TestProcessor.cs" />
@@ -184,13 +268,6 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -213,41 +290,24 @@
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
     </Compile>
-    <Compile Include="Site.Mobile.Master.cs">
-      <DependentUpon>Site.Mobile.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Site.Mobile.Master.designer.cs">
-      <DependentUpon>Site.Mobile.Master</DependentUpon>
-    </Compile>
-    <Compile Include="ViewSwitcher.ascx.cs">
-      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ViewSwitcher.ascx.designer.cs">
-      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="aspx_vue_prototype\" />
-    <Folder Include="ts\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
-    <Content Include="Scripts\vue\tsconfig.json" />
-    <Content Include="Scripts\vue\src\components\HelloWorld.vue" />
-    <Content Include="Scripts\vue\src\App.vue" />
-    <Content Include="Scripts\vue\src\components\FullNameEditor.vue" />
-    <Content Include="Scripts\vue\src\pages\DefaultPage.vue" />
-    <Content Include="Scripts\vue\src\components\refresh-button\RefreshButton.vue" />
-    <Content Include="Scripts\vue\dist\js\chunk-vendors.js.map" />
-    <Content Include="Scripts\vue\dist\js\default.js.map" />
-    <Content Include="Scripts\vue\dist\js\main.js.map" />
     <Content Include="services\TestHandler.ashx" />
     <Compile Include="services\GenericHandler.cs" />
+    <Content Include="vue\package-lock.json" />
+    <Content Include="vue\package.json" />
+    <Content Include="vue\src\App.vue" />
+    <Content Include="vue\src\components\FullNameEditor.vue" />
+    <Content Include="vue\src\components\HelloWorld.vue" />
+    <Content Include="vue\src\components\refresh-button\RefreshButton.vue" />
+    <Content Include="vue\src\pages\DefaultPage.vue" />
+    <Content Include="vue\tsconfig.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -256,13 +316,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Scripts\vue\src\main.js" />
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="Scripts\vue\src\model\person.ts" />
+    <TypeScriptCompile Include="vue\src\model\person.ts" />
+    <TypeScriptCompile Include="vue\src\services\person.service.ts" />
+    <TypeScriptCompile Include="vue\src\shims-tsx.d.ts" />
+    <TypeScriptCompile Include="vue\src\shims-vue.d.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
