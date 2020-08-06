@@ -15,8 +15,26 @@
       <table class="table table-bordered table-striped">
         <thead>
         <tr>
-          <th>Id</th>
-          <th>Name</th>
+          <th>
+
+            <a href="javascript:;" v-on:click="orderColumn('Id')">ID
+              <span v-bind:class="[orderAsc ? 'fa fa-caret-up' : 'fa fa-caret-down', orderBy === 'Id' ? 'visible' : 'd-none']"
+              ></span>
+            </a>
+
+            <!--          <a href="javascript:;" data-bind="click: function () { orderAsc(!orderAsc()); orderBy('ID'); search() }">ID -->
+            <!--            <span data-bind="css: orderAsc() ? 'fa fa-caret-up' : 'fa fa-caret-down', visible: orderBy() == 'ID' ? true : false"></span></a></th>-->
+
+
+          </th>
+          <th>
+
+            <a href="javascript:;" v-on:click="orderColumn('Name')">Name
+              <span v-bind:class="[orderAsc ? 'fa fa-caret-up' : 'fa fa-caret-down', orderBy === 'Name' ? 'visible' : 'd-none']"
+              ></span>
+            </a>
+
+          </th>
         </tr>
         </thead>
         <tbody>
@@ -27,6 +45,9 @@
         </tr>
         </tbody>
       </table>
+
+      <Pagination></Pagination>
+
     </div>
   </div>
 </template>
@@ -34,16 +55,23 @@
 <script>
 
 
+import Pagination from "@/components/Pagination";
+
 const $ = require('jquery');
 
 export default {
 
   name: 'PersonTable',
+  components:{
+    Pagination,
+  },
   data() {
     return {
       loading: false,
       personData: [],
-      error: null
+      error: null,
+      orderBy: 'Id',
+      orderAsc: true
     }
   },
   mounted() {
@@ -63,7 +91,9 @@ export default {
           const self = this;
           $.post('/services/TestHandler.ashx',
               {
-                action: 'test'
+                action: 'test',
+                orderBy: self.orderBy,
+                orderAsc: self.orderAsc
               },
               function (data) {
                 this.loading = false;
@@ -77,7 +107,12 @@ export default {
                 }
               });
 
-        }
+        },
+        orderColumn(key) {
+          this.orderAsc = !this.orderAsc;
+          this.orderBy = key;
+          this.fetchData();
+        },
       },
 
 
