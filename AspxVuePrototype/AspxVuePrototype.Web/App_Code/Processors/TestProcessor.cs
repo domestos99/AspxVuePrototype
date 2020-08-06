@@ -5,6 +5,7 @@ using System.Dynamic;
 using System.IO;
 using System.Linq;
 using System.Web;
+using AspxVuePrototype.Web.App_Code.Models;
 using AspxVuePrototype.Web.services;
 using AspxVuePrototype.Web.Services;
 
@@ -14,13 +15,25 @@ namespace AspxVuePrototype.Web.App_Code.Processors
     {
         public void Test(HttpContext context)
         {
-            TestModel model;
-            var a = HandlerModelFactory.Create<TestModel>(context, out model);
-
-           
+            //TestModel model;
+            //var a = HandlerModelFactory.Create<TestModel>(context, out model);
 
 
-            WriteErrorResponse(context, "", model);
+            var result = new List<Person>();
+
+            for (int i = 0; i < 10; i++)
+            {
+                result.Add(new Person()
+                {
+                    Id=i,
+                    Name = Guid.NewGuid().ToString("N")
+                });
+            }
+
+
+
+
+            WriteSuccessResponse(context, "", result);
             return;
         }
 

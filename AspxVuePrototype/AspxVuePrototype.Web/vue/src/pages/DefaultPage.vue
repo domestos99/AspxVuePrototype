@@ -4,11 +4,16 @@
 
         <h1>Default page - Vue.JS</h1>
 
+      <PersonTable></PersonTable>
+
         <a class="btn btn-primary" v-on:click="getPerson" >Person console</a>
 
         <FullNameEditor v-model="fullName"></FullNameEditor>
 
         <RefreshButton></RefreshButton>
+
+
+
     </div>
 
 </template>
@@ -20,13 +25,15 @@
 
     import RefreshButton from "../components/refresh-button/RefreshButton";
     import FullNameEditor from "../components/FullNameEditor";
+    import PersonTable from "../components/PersonTable";
     import PersonService from "../services/person.service";
 
     export default {
         name: 'DefaultPage',
         components: {
             FullNameEditor,
-            RefreshButton
+            RefreshButton,
+            PersonTable
         },
         props: {
             msg: String

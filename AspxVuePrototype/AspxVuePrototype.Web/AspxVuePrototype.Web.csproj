@@ -259,6 +259,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Code\Processors\TestProcessor.cs" />
+    <Content Include="App_Code\Models\Person.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -308,6 +309,7 @@
     <Content Include="vue\src\components\refresh-button\RefreshButton.vue" />
     <Content Include="vue\src\pages\DefaultPage.vue" />
     <Content Include="vue\tsconfig.json" />
+    <Content Include="vue\src\components\PersonTable.vue" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
