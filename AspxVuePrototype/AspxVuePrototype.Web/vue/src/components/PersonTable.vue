@@ -1,7 +1,14 @@
 ﻿<template>
   <div>
 
-    <a href="javascript:;" class="btn btn-default" v-on:click="fetchData">Load data</a>
+    <YesNoModal v-if="showModal" id="bv-modal-example"
+                @close="showModal = false"
+                @yesClick="showModal = false"
+                @noClick="showModal = false"
+          ></YesNoModal>
+
+
+    <button v-on:click="openModal">Open modal</button>
 
     <div v-if="loading" class="loading">
       Loading...
@@ -10,6 +17,8 @@
     <div v-if="error" class="error">
       {{ error }}
     </div>
+
+    <RefreshButton v-on:refreshClick="fetchData"></RefreshButton>
 
     <div v-if="personData" class="content">
       <table class="table table-bordered table-striped">
@@ -48,14 +57,19 @@
 
       <Pagination></Pagination>
 
+
+
     </div>
   </div>
+
 </template>
 
 <script>
 
 
 import Pagination from "@/components/Pagination";
+import RefreshButton from "./RefreshButton";
+import YesNoModal from "./YesNoModal";
 
 const $ = require('jquery');
 
@@ -63,7 +77,9 @@ export default {
 
   name: 'PersonTable',
   components:{
+    YesNoModal,
     Pagination,
+    RefreshButton
   },
   data() {
     return {
@@ -71,7 +87,8 @@ export default {
       personData: [],
       error: null,
       orderBy: 'Id',
-      orderAsc: true
+      orderAsc: true,
+      showModal: false
     }
   },
   mounted() {
@@ -86,9 +103,9 @@ export default {
   methods:
       {
         fetchData() {
-          this.loading = true;
-          this.error = null;
           const self = this;
+          self.loading = true;
+          self.error = null;
           $.post('/services/TestHandler.ashx',
               {
                 action: 'test',
@@ -96,7 +113,7 @@ export default {
                 orderAsc: self.orderAsc
               },
               function (data) {
-                this.loading = false;
+                self.loading = false;
                 if (data.Success) {
                   console.log(data.Data);
                   self.personData = data.Data;
@@ -113,6 +130,10 @@ export default {
           this.orderBy = key;
           this.fetchData();
         },
+        openModal(){
+          // this.$bvModal.show('bv-modal-example');
+          this.showModal = true;
+        }
       },
 
 

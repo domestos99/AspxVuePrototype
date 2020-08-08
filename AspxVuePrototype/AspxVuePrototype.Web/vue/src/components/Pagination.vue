@@ -46,11 +46,12 @@
 
 </template>
 <script>
-const $ = require('jquery');
 
 export default {
 
   name: 'Pagination',
+  components: {
+  },
   data() {
     return {
       currentPage: 1,

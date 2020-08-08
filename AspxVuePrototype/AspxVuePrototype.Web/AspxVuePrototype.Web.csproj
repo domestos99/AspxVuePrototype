@@ -310,6 +310,10 @@
     <Content Include="vue\src\pages\DefaultPage.vue" />
     <Content Include="vue\tsconfig.json" />
     <Content Include="vue\src\components\PersonTable.vue" />
+    <Content Include="vue\src\components\Pagination.vue" />
+    <Content Include="vue\src\components\RefreshButton.vue" />
+    <Content Include="vue\src\components\GenericModal.vue" />
+    <Content Include="vue\src\components\YesNoModal.vue" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
