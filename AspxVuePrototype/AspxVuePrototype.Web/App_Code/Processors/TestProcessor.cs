@@ -19,18 +19,22 @@ namespace AspxVuePrototype.Web.App_Code.Processors
             //var a = HandlerModelFactory.Create<TestModel>(context, out model);
 
 
-            var result = new List<Person>();
+            var result = new List<Partner>();
 
             for (int i = 0; i < 10; i++)
             {
-                result.Add(new Person()
+                result.Add(new Partner()
                 {
                     Id=i,
-                    Name = Guid.NewGuid().ToString("N")
+                    Name = Guid.NewGuid().ToString("N"),
+                    Street = Guid.NewGuid().ToString("N"),
+                    City = Guid.NewGuid().ToString("N"),
+                    Zip = Guid.NewGuid().ToString("N"),
+                    Country = Guid.NewGuid().ToString("N"),
+                    Note = Guid.NewGuid().ToString("N"),
+                    Active = true
                 });
             }
-
-
 
 
             WriteSuccessResponse(context, "", result);

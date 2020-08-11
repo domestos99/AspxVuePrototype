@@ -9,6 +9,9 @@
     <title><%: Page.Title %> - My ASP.NET Application</title>
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+
     <!-- Font Awesome -->
     <link href="Content/fontawesome-free/css/all.min.css" rel="stylesheet" />
     <!-- Ionicons -->
