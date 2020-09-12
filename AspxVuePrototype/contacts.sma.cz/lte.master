@@ -96,17 +96,22 @@
                with font-awesome or any other icon font library -->
 
           <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
+            <a href="/Default.aspx" class="nav-link">
               <i class="nav-icon fa fa-th"></i>
               <p>
-                Widgets
-                <span class="right badge badge-danger">New</span>
+                Home page
               </p>
             </a>
           </li>
-
-         
-          <li class="nav-header">MISCELLANEOUS</li>
+            
+            <li class="nav-item">
+                <a href="/Partners.aspx" class="nav-link">
+                    <i class="nav-icon fa fa-th"></i>
+                    <p>
+                        Lidé
+                    </p>
+                </a>
+            </li>
           
         </ul>
       </nav>

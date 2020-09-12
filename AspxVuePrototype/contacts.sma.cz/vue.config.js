@@ -6,9 +6,9 @@
             entry: 'src/pages/default/defaultPage.js',
             title: 'Default Page'
         },
-        personsPage: {
-            entry: 'src/pages/person/personsPage.js',
-            title: 'Persons Page'
+        partnersPage: {
+            entry: 'src/pages/partner/partnersPage.js',
+            title: 'Partners Page'
         }
     },
     css: {
