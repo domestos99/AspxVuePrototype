@@ -1,6 +1,16 @@
 ﻿<template>
   <div>
 
+    <a class="btn btn-primary pull-right" id="btnInsertNew" href="javascript:;" v-on:click="openNewModal">
+      <i class="fa fa-plus-circle"></i>&nbsp;
+      Nová položka
+    </a>
+
+    <b-modal id="newPartnerModal" title="Nový partner">
+      <partnerNewModal></partnerNewModal>
+    </b-modal>
+
+
     <div class="form-horizontal">
 
       <div class="card">
@@ -41,7 +51,7 @@
               </tr>
               </thead>
               <tbody>
-              <tr v-for="(per, i) in persons" v-bind:key="i">
+              <tr v-for="(per, i) in partners" v-bind:key="i">
                 <td>{{ per.Name }}</td>
                 <td>{{ per.Street }}</td>
               </tr>
@@ -84,12 +94,16 @@
 <script>
 
 import $ from 'jquery';
+import partnerNewModal from "./partnerNewModal";
 
 export default {
   name: 'partners',
+  components: {
+    partnerNewModal
+  },
   data() {
     return {
-      persons: [],
+      partners: [],
 
       pagination: {
         page: 1,
@@ -121,8 +135,8 @@ export default {
           },
           function (data) {
             if (data.Success) {
-              self.persons = data.Data;
-              self.pagination.total = self.persons.length;
+                self.partners = data.Data;
+                self.pagination.total = self.partners.length;
             } else {
               console.log(data.Message);
             }
@@ -141,6 +155,9 @@ export default {
       } else {
         return true;
       }
+    },
+    openNewModal(){
+      this.$bvModal.show('newPartnerModal');
     }
   }
 }
